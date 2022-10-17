@@ -1,0 +1,15 @@
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\bin\Debug\net6.0\SwedishInstrumentsTI83.exe
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\bin\Debug\net6.0\SwedishInstrumentsTI83.deps.json
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\bin\Debug\net6.0\SwedishInstrumentsTI83.runtimeconfig.json
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\bin\Debug\net6.0\SwedishInstrumentsTI83.dll
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\bin\Debug\net6.0\SwedishInstrumentsTI83.pdb
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.csproj.AssemblyReference.cache
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.AssemblyInfoInputs.cache
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.AssemblyInfo.cs
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.csproj.CoreCompileInputs.cache
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.dll
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\refint\SwedishInstrumentsTI83.dll
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.pdb
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\SwedishInstrumentsTI83.genruntimeconfig.cache
+C:\Users\danst\source\repos\SwedishInstrumentsTI83\obj\Debug\net6.0\ref\SwedishInstrumentsTI83.dll
