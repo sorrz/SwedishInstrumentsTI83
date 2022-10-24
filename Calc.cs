@@ -5,26 +5,27 @@
         public static void Calculations(ref List<string> saves)
         {
             // Declaring the variables needed for the calculations
+            // I decided to go for Decimal here to ensure we get specific calculations
+            // if the user wanted to do small calulations that needs to be exact.
             var choiceID = 0;
             decimal result = 0.0m;
             decimal input_1 = 0.0m;
             decimal input_2 = 0.0m;
             string operand = " ";
+
             // Cleaning the console and setting up for another go...
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine();
-            Console.WriteLine("ADDITION                          - press 1");
-            Console.WriteLine("SUBTRACTION                       - press 2");
-            Console.WriteLine("MULTIPLICATION                    - press 3");
-            Console.WriteLine("DIVISION                          - press 4");
-            Console.WriteLine("");
-            Console.WriteLine("RETURN TO MAIN MENU               - press 5");
-            Console.WriteLine();
-
+            Console.WriteLine("ADDITION                          -> press 1");
+            Console.WriteLine("SUBTRACTION                       -> press 2");
+            Console.WriteLine("MULTIPLICATION                    -> press 3");
+            Console.WriteLine("DIVISION                          -> press 4\n\n");
+            Console.WriteLine("RETURN TO MAIN MENU               -> press 5\n");
 
 
             // KeyPress to decide which calculation we wanna do
+            // Passing it into the Switch statement, to do different Calculations.
             while (true)
             {
                 var keypress = Console.ReadKey(true);
@@ -59,7 +60,11 @@
 
                 }
             }
+            try
+            {
                 // Using the ChoiceID to pass arguments into calculations
+                // Do the Calculation you have choosen from the Menu. 
+                // Saving an Operand, the Inputs and the resulthe ChoiceID to pass arguments into calculations
                 switch (choiceID)
                 {
                     case 1: // Addition
@@ -100,7 +105,7 @@
                             Console.WriteLine("Sorry, we're not equipped to handle 0-Divisions...");
                             Console.WriteLine("Taking you back to main Menu in 2sec.");
                             Thread.Sleep(2000);
-                        Menu.MainMenu(ref saves);
+                            Menu.MainMenu(ref saves);
                         }
                         else
                         {
@@ -113,20 +118,42 @@
                     case 5: // Go back to Main Menu
                         Menu.MainMenu(ref saves);
                         break;
+                }
             }
-            // Make sure something has been calculated before saving, if it's 0
-            // return to Main Menu without population the save List.
-            if (input_1 == 0.0m || result == 0.0m)
+            // Catching FormatExceptions, letting the user know they entered a non-number char.
+            // Moving User back to the Calculation meny with the ref to the list.
+            catch (FormatException)
             {
-                Menu.MainMenu(ref saves);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Fel vid inmatning, tar dig tillbaka till menyn.");
+                Thread.Sleep(2000);
+                Calculations(ref saves);
+
+
+            }
+
+
+            // Here we create a string some presentation text, the values, operands and result passed from
+            // the Switch statement. 
+            // Writing it out for the user and saving it into the List we passed a reference to, stemming from the Main() Function.
+            string save = "Your Calculation: " + input_1 + " " + operand + " " + input_2 + "=" + result;
+            Console.WriteLine(save);
+            saves.Add(save);
+            // Asking for continued or go back to main menu?
+            // Using a "jump" to the Method of user choice, reffing the List there.
+            Console.Write("Wanna do another? (Y/N) ");
+            var goagain = Console.ReadKey(true);
+            if (goagain.Key == ConsoleKey.Y)
+            {
+                Calculations(ref saves);
             }
             else
             {
-                // Posting Result and saving it to the list
-                string save = "Your Calculation: " + input_1 + " " + operand + " " + input_2 + "=" + result;
-                Console.WriteLine(save);
-                saves.Add(save);
+                Menu.MainMenu(ref saves);
+
             }
+
+
 
         }
 
