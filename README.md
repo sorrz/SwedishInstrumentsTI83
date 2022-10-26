@@ -37,13 +37,22 @@ When working I've ticked them of and changed their status to "check" when they w
 This was a great healp going back making sure I filled the criterias for the Assignment.
 
 CHECK: Välkomnande meddelande
+
 CHECK: En lista för att spara historik för räkningar
+
 CHECK: Användaren matar in tal och matematiska operation
+
 CHECK: OBS! Användaren måsta mata in ett tal för att kunna ta sig vidare i programmet!
+
 CHECK: Ifall användaren skulle dela 0 med 0 visa Ogiltig inmatning!
+
 CHECK: Lägga resultat till listan
+
 CHECK: Visa resultat
+
 CHECK: Fråga användaren om den vill visa tidigare resultat.
+
 CHECK: Visa tidigare resultat
+
 CHECK: Fråga användaren om den vill avsluta eller fortsätta.
 
